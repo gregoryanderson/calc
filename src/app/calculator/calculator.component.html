@@ -1,0 +1,33 @@
+<div class="calculator">
+  <input type="text" [(ngModel)]="currentNumber" />
+  <div class="buttons">
+    <div class="row">
+      <button (click)="addToCurrentNumber('1')">1</button>
+      <button (click)="addToCurrentNumber('4')">4</button>
+      <button (click)="addToCurrentNumber('7')">7</button>
+      <button (click)="addToCurrentNumber('0')">0</button>
+    </div>
+    <div class="row">
+      <button (click)="addToCurrentNumber('2')">2</button>
+      <button (click)="addToCurrentNumber('5')">5</button>
+      <button (click)="addToCurrentNumber('8')">8</button>
+      <button (click)="addToCurrentNumber('.')">.</button>
+    </div>
+    <div class="row">
+      <button (click)="addToCurrentNumber('3')">3</button>
+      <button (click)="addToCurrentNumber('6')">6</button>
+      <button (click)="addToCurrentNumber('9')">9</button>
+      <button (click)="calculate()">=</button>
+    </div>
+
+    <div class="row">
+      <button (click)="setOperator('-')">-</button>
+      <button (click)="setOperator('*')">*</button>
+      <button (click)="setOperator('/')">/</button>
+      <button (click)="setOperator('+')">+</button>
+    </div>
+  </div>
+  <div class="row">
+    <button (click)="clear()">C</button>
+  </div>
+</div>
